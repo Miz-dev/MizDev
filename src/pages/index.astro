@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Greeting from "../components/Greeting.jsx";
 const pageTitle = "Home Page";
 
 //microCMS呼び出し
@@ -10,7 +9,6 @@ const response = await getBlogs({ fields: ["id", "title"] });
 
 <BaseLayout pageTitle={pageTitle}>
   <h2>My awesome blog subtitle</h2>
-  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
   <ul>
     {
       response.contents.map((content: any) => (
