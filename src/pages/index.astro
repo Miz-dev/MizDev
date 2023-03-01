@@ -13,7 +13,7 @@ const response = await getBlogs({ fields: ["id", "title"] });
     {
       response.contents.map((content: any) => (
         <li>
-          <a href={content.id}>{content.title}</a>
+          <a href={`/blog/${content.id}`}>{content.title}</a>
         </li>
       ))
     }
