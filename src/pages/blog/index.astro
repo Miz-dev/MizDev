@@ -28,3 +28,18 @@ const response = await getBlogs({ fields: ["id", "title"] });
     }
   </ul>
 </BaseLayout>
+
+<style>
+  li {
+    list-style: none;
+  }
+  li a {
+    color: #2c568e;
+    text-decoration: none;
+    transition: all 0.4s;
+  }
+  li a:hover,
+  a:focus {
+    opacity: 0.7;
+  }
+</style>
