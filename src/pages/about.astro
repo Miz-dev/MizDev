@@ -1,18 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "About Me";
-
-const identity = {
-  firstName: "Miz",
-  country: "Japan",
-  occupation: "Frontend developer",
-  hobbies: ["Football", "Baseball", "Music"],
-};
-
-const skills = ["HTML", "CSS", "JavaScript", "React", "Next.js", "Astro"];
-
-const skillColor = "navy";
-const fontWeight = "bold";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -26,29 +14,5 @@ const fontWeight = "bold";
     自らの経験から未経験からWeb業界を目指す人向けの情報、Web制作についてのちょっとしたTipsや役立つことを発信しています！
   </p>
 
-  <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>
-      I live in {identity.country} and I work as a {identity.occupation}.
-    </li>
-    {
-      identity.hobbies.length >= 2 && (
-        <li>
-          Three of my hobbies are: {identity.hobbies[0]}, {identity.hobbies[1]}{" "}
-          and {identity.hobbies[2]}
-        </li>
-      )
-    }
-  </ul>
-  <p>My skills are:</p>
-  <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-  </ul>
+  <p>TypeScript/React/Next.js/Astro学習中！</p>
 </BaseLayout>
-
-<style define:vars={{ skillColor, fontWeight }}>
-  .skill {
-    color: var(--skillColor);
-    font-weight: var(--fontWeight);
-  }
-</style>
