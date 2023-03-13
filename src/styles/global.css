@@ -25,7 +25,7 @@ h1 {
 }
 
 .dark .nav-links a {
-  color: #fff;
+  color: #777;
 }
 
 .dark li a {
@@ -56,7 +56,9 @@ h1 {
 }
 
 .nav-links a {
-  color: #2c568e;
+  color: #c0d0dc;
+  color: #525e66;
+  color: #777;
   display: block;
   text-align: center;
   padding: 10px 0;
@@ -68,7 +70,7 @@ h1 {
 
 .nav-links a:hover,
 a:focus {
-  background-color: #d0d0d0;
+  color: #2c568e;
 }
 
 .expanded {
