@@ -1,23 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "MizLog Astro";
-
-//microCMS呼び出し
-import { getBlogs } from "../library/microcms";
-const response = await getBlogs({ fields: ["id", "title"] });
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h2>My awesome blog subtitle</h2>
-  <ul>
-    {
-      response.contents.map((content: any) => (
-        <li>
-          <a href={`/blog/${content.id}`}>{content.title}</a>
-        </li>
-      ))
-    }
-  </ul>
 </BaseLayout>
 
 <style>
