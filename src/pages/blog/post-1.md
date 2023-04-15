@@ -26,7 +26,24 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
 
-```html
-<p><em>test</em></p>
-<p>テキストテキスト</p>
+```js
+// React で使う場合の例
+import "zenn-content-css";
+
+export default function App(props) {
+  useEffect(() => {
+    import("zenn-embed-elements");
+  }, []);
+
+  return (
+    <div
+      className="znc"
+      dangerouslySetInnerHTML={{
+        __html: props.html, // markdownから変換されたHTMLを渡す
+      }}
+    />
+  );
+}
 ```
+
+https://www.youtube.com/watch?v=WRVsOCh907o

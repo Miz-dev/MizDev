@@ -590,6 +590,7 @@ __metadata:
     preact: "npm:^10.6.5"
     prettier: "npm:^2.8.3"
     sass: "npm:^1.58.3"
+    zenn-content-css: "npm:^0.1.141"
   languageName: unknown
   linkType: soft
 
@@ -4918,6 +4919,13 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 63eceacd482622afd71290541a9823a0e5eed88a6b58a5d136a5fb8151ed4d1549c80f28d74d4ad351582f9890635d49e6cf70f8d3cc64948640f839f6a37c70
+  languageName: node
+  linkType: hard
+
+"zenn-content-css@npm:^0.1.141":
+  version: 0.1.141
+  resolution: "zenn-content-css@npm:0.1.141"
+  checksum: 910344a6776cd1a17071879a7f1765af69cc028cc71e072d513936973dbb60b4c0a1e610144365ad48c8a7bc7c4b1ba323258615f91c732281cc829a9a9ffc61
   languageName: node
   linkType: hard
 

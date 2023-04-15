@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
+import "zenn-content-css";
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
@@ -18,8 +19,9 @@ const { frontmatter } = Astro.props;
       ))
     }
   </div>
-
-  <slot />
+  <div class="znc">
+    <slot />
+  </div>
 </BaseLayout>
 
 <style>
