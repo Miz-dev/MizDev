@@ -3,14 +3,22 @@ import Social from "./Social.astro";
 ---
 
 <footer>
-  <Social platform="twitter" username="Miz_dev" />
-  <Social platform="github" username="Miz-dev" />
+  <Social />
+  <small>
+    &copy;{`${new Date().getFullYear()} MizLog. All rights reserved.`}
+  </small>
 </footer>
 
 <style>
   footer {
     display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    width: 100%;
+    border-top: 1px solid #777;
+    padding-top: 1rem;
+    margin-top: auto;
   }
 </style>
