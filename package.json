@@ -14,7 +14,6 @@
     "@astrojs/preact": "^2.0.0",
     "@astrojs/rss": "^2.1.0",
     "astro": "^2.0.2",
-    "microcms-js-sdk": "^2.3.2",
     "preact": "^10.6.5",
     "prettier": "^2.8.3"
   },
