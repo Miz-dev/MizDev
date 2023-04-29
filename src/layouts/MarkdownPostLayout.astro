@@ -5,10 +5,18 @@ import "zenn-content-css";
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <p><em>{frontmatter.description}</em></p>
-  <p>公開日{frontmatter.pubDate.slice(0, 10)}</p>
+  <!-- <p><em>{frontmatter.description}</em></p> -->
+  <p class="meta">
+    公開日: {frontmatter.pubDate.slice(0, 10)}
+    <a
+      class="author"
+      href="https://twitter.com/Miz_dev"
+      target="_blank"
+      rel="noopener noreferrer">@Miz_dev</a
+    >
+  </p>
 
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+  <!-- <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} /> -->
 
   <div class="tags">
     {
@@ -19,7 +27,27 @@ import "zenn-content-css";
       ))
     }
   </div>
+
   <div class="znc">
     <slot />
   </div>
 </BaseLayout>
+
+<style>
+  .meta {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .author {
+    color: #00539f;
+    transition: 0.4s;
+    text-decoration: none;
+    margin-left: 0.5rem;
+  }
+  .author:hover {
+    opacity: 0.5;
+  }
+  .tags {
+    margin-bottom: 1rem;
+  }
+</style>
