@@ -8,6 +8,7 @@ image:
   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
   alt: "The Astro logo with the word One."
 tags: ["astro", "blogging", "learning in public"]
+draft: false
 ---
 
 # はじめに
@@ -78,7 +79,7 @@ const App = () => {
 };
 ```
 
-で囲う必要がある。  
+で囲う必要がある。
 以前は以下の記述で囲っていたが、今は上記のように簡略化して記述できる。
 
 ```js
@@ -359,8 +360,26 @@ export const ColorfulMassage = (props) => {
 
 useCallback()は memo 化されたコールバック関数を返す。
 
-```js
+```js:ファイル名
 useCallback(コールバック関数, [監視対象]);
 ```
 
 先程の memo 化とそこに関数を渡していく場合は、関数の方の memo 化(= useCallback)の 2 つを組み合わせる必要がある。
+
+## テーブルテスト
+| Head | Head | Head |
+| ---- | ---- | ---- |
+| Text | Text | Text |
+| Text | Text | Text |
+
+:::message
+メッセージをここに
+:::
+
+-----
+
+:::details タイトル
+表示したい内容
+:::
+
+https://zenn.dev/zenn/articles/markdown-guide
