@@ -110,10 +110,6 @@ a:focus {
   text-decoration: none;
 }
 
-a:hover {
-  color: #fff;
-}
-
 .tag:hover {
   background-color: #00539f;
 }
