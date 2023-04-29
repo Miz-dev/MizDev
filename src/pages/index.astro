@@ -1,13 +1,32 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Post from "../components/Post.astro";
 const pageTitle = "MizLog Astro";
+const allPosts = await Astro.glob("../pages/posts/*.md");
+const nonDraftPosts = allPosts.filter((post) => !post.frontmatter.draft);
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
+  <ul>
+    {
+      nonDraftPosts.map((post) => (
+        <Post
+          url={post.url}
+          title={post.frontmatter.title}
+          pubDate={post.frontmatter.pubDate}
+        />
+      ))
+    }
+  </ul>
 </BaseLayout>
 
 <style>
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    padding-left: 0;
+  }
   li {
     list-style: none;
   }
