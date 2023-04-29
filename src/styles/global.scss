@@ -89,6 +89,10 @@ a:focus {
   display: unset;
 }
 
+.dark li {
+  border: 1px solid #fff;
+}
+
 /* tags styles */
 .tags {
   display: flex;
