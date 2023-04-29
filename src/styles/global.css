@@ -24,15 +24,23 @@ h1 {
 
 .dark body {
   background-color: rgb(15, 25, 40);
-  color: #fff;
+  color: #eee;
 }
 
 .dark .nav-links a {
-  color: #777;
+  color: #eee;
 }
 
 .dark li a {
-  color: #fff;
+  color: #eee;
+}
+
+.dark .social-icon {
+  fill: #eee;
+}
+
+.dark footer {
+  border-top: 1px solid #eee;
 }
 
 /* nav styles */
