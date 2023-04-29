@@ -13,9 +13,9 @@ import "zenn-content-css";
   <div class="tags">
     {
       frontmatter.tags.map((tag: string) => (
-        <p class="tag">
-          <a href={`/tags/${tag}`}>{tag}</a>
-        </p>
+        <a class="tag" href={`/tags/${tag}`}>
+          {tag}
+        </a>
       ))
     }
   </div>
@@ -23,23 +23,3 @@ import "zenn-content-css";
     <slot />
   </div>
 </BaseLayout>
-
-<style>
-  a {
-    color: #2c568e;
-    text-decoration: none;
-  }
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-  .tag {
-    margin: 0.25em;
-    border: solid 1px #777;
-    border-radius: 0.75em;
-    padding: 0.2em 0.5em;
-    font-size: 1.15em;
-    background-color: #f8fcfd;
-  }
-</style>
