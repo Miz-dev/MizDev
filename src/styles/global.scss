@@ -23,8 +23,13 @@ h1 {
 }
 
 .dark body {
-  background-color: rgb(15 25 40);
   color: #eee;
+  background-color: rgb(15 25 40);
+}
+
+.dark .baseTitle {
+  color: #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .dark .nav-links a {
@@ -113,7 +118,7 @@ a:focus {
   color: #00539f;
 }
 .tags a:hover {
-  color: #fff;
+  color: #eee;
 }
 .tag {
   height: fit-content;
@@ -129,13 +134,13 @@ a:focus {
   background-color: #00539f;
 }
 .dark .tags a {
-  color: #fff;
+  color: #eee;
 }
 .dark .tag {
-  border: 1px solid #fff;
+  border: 1px solid #eee;
 }
 .dark .tags a:hover {
-  color: #fff;
+  color: #eee;
 }
 .dark .tag:hover {
   border: 1px solid #00539f;
