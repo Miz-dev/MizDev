@@ -11,8 +11,10 @@ const { title, url, pubDate } = Astro.props;
 
 <style>
   .postItem {
-    border: 2px solid #2c568e;
-    border-radius: 1.5rem;
+    border: 0px solid #2c568e;
+    /* background-color: #fff; */
+    box-shadow: 0px 0px 5px 0px rgba(44, 86, 142, 0.35);
+    border-radius: 0.5rem;
     list-style: none;
   }
   .postItem a {
@@ -28,7 +30,8 @@ const { title, url, pubDate } = Astro.props;
   }
   .postItem a:hover,
   a:focus {
-    opacity: 0.5;
+    background-color: rgba(44, 86, 142, 0.1);
+    border-radius: 0.5rem;
   }
   h2 {
     font-size: 1.2rem;

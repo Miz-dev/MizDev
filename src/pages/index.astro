@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Post from "../components/Post.astro";
-const pageTitle = "MizLog Astro";
+const pageTitle = "Astro MizLog";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 const nonDraftPosts = allPosts.filter((post) => !post.frontmatter.draft);
 ---
