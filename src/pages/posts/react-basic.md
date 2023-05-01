@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 
-title: "My First Blog Post"
-pubDate: 2023/04/01
-description: "This is the first post of my new Astro blog."
-image:
-  url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
-  alt: "The Astro logo with the word One."
-tags: ["astro", "blogging", "learning in public"]
-draft: true
+title: "Reactの基礎"
+pubDate: 2023/05/02
+# description: "This is the first post of my new Astro blog."
+# image:
+#   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
+#   alt: "The Astro logo with the word One."
+tags: ["react"]
+draft: false
 ---
 
 # はじめに
@@ -360,26 +360,12 @@ export const ColorfulMassage = (props) => {
 
 useCallback()は memo 化されたコールバック関数を返す。
 
-```js:ファイル名
+```js
 useCallback(コールバック関数, [監視対象]);
 ```
 
 先程の memo 化とそこに関数を渡していく場合は、関数の方の memo 化(= useCallback)の 2 つを組み合わせる必要がある。
 
-## テーブルテスト
-| Head | Head | Head |
-| ---- | ---- | ---- |
-| Text | Text | Text |
-| Text | Text | Text |
+## Zenn記事
 
-:::message
-メッセージをここに
-:::
-
------
-
-:::details タイトル
-表示したい内容
-:::
-
-https://zenn.dev/zenn/articles/markdown-guide
+<a href="https://zenn.dev/miz_dev/articles/4e6baa5b747c5d" target="_blank">Reactの基本的なところを備忘として残しておく</a>
