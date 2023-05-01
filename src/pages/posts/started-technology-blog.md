@@ -22,7 +22,7 @@ draft: false
 
 # 制作の経緯
 
-元々、「 <a class="social-icon" href="https://mizlog.dev/" target="_blank">MizLog(ミズログ)</a>」というブログがあるのですが、  
+元々、「 <a href="https://mizlog.dev/" target="_blank">MizLog(ミズログ)</a>」というブログがあるのですが、  
 もっと軽い感じの記事や、技術的な叩き台としての記事も書いていきたいと思っていました。  
 そんな中で前から気になっていた Astro を用いて、気軽に投稿できるようなブログを作成したいと思い当ブログを立ち上げました。
 
