@@ -1,18 +1,18 @@
 ---
-const { title, url, pubDate } = Astro.props;
+const { title, url, pubDate, tags } = Astro.props;
 ---
 
 <li class="postItem">
   <a href={url}>
     <h2>{title}</h2>
     <time>{pubDate}</time>
+    <span class="tag">{tags}</span>
   </a>
 </li>
 
 <style>
   .postItem {
     border: 0px solid #2c568e;
-    /* background-color: #fff; */
     box-shadow: 0px 0px 5px 0px rgba(44, 86, 142, 0.35);
     border-radius: 0.5rem;
     list-style: none;
@@ -38,6 +38,11 @@ const { title, url, pubDate } = Astro.props;
     margin-top: 0;
   }
   time {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .postItem .tag {
+    transition: none;
+    pointer-events: none;
   }
 </style>
