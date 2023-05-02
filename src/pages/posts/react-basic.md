@@ -13,7 +13,8 @@ draft: false
 
 # はじめに
 
-React を学び始めた時の基本的なところの備忘録となります。
+React を学び始めた時の基本的なところの備忘録となります。  
+※Zenn に投稿している記事です。
 
 ## React 使用する場合
 
@@ -34,13 +35,13 @@ HTML にコンポーネントを反映するために、以下を記載する。
 import ReactDom from "react-dom";
 ```
 
-## 　 JSX 記法
+## JSX 記法
 
 JavaScript の中で、return で HTML のタグを記述していく。
 
 ```js
 const App = () => {
-	return <h1>こんにちは！</h1>;
+  return <h1>こんにちは！</h1>;
 };
 ```
 
@@ -48,12 +49,12 @@ return の内容が複数になる場合は()で囲って、その中に記述�
 
 ```js
 const App = () => {
-	return (
-		<>
-			<h1>こんにちは！</h1>
-			<p>お元気ですか？</p>
-		</>
-	);
+  return (
+    <>
+      <h1>こんにちは！</h1>
+      <p>お元気ですか？</p>
+    </>
+  );
 };
 ```
 
@@ -64,8 +65,8 @@ const App = () => {
 ```js
 const App = () => {
   return (
-      <h1>こんにちは！</h1>
-      <p>お元気ですか？</p>
+    <h1>こんにちは！</h1>
+    <p>お元気ですか？</p>
   );
 };
 ```
@@ -75,7 +76,7 @@ const App = () => {
 
 ```js
 const App = () => {
-	return <>〜内容〜</>;
+  return <>〜内容〜</>;
 };
 ```
 
@@ -84,7 +85,7 @@ const App = () => {
 
 ```js
 const App = () => {
-	return <React.Fragment>〜内容〜</React.Fragment>;
+  return <React.Fragment>〜内容〜</React.Fragment>;
 };
 ```
 
@@ -215,17 +216,17 @@ const ColorfulMassage = (props) => {};
 
 ```js
 const ColorfulMassage = (props) => {
-	const { color, children } = props;
-	const contentStyle = {
-		color, // プロパティ名と値が同じなので、省略することができる
-		fontSize: "18px",
-	};
+  const { color, children } = props;
+  const contentStyle = {
+    color, // プロパティ名と値が同じなので、省略することができる
+    fontSize: "18px",
+  };
 
-	return (
-		<>
-			<p style={contentStyle}>{children}</p>
-		</>
-	);
+  return (
+    <>
+      <p style={contentStyle}>{children}</p>
+    </>
+  );
 };
 ```
 
@@ -252,7 +253,7 @@ useEffect を使用することで処理の監視を分離できたり、コン�
 
 ```js
 useEffect(() => {
-	// 監視したい処理を記述
+  // 監視したい処理を記述
 }, [監視対象の変数を記述]);
 ```
 
@@ -263,22 +264,22 @@ useEffect(() => {
 ```js
 // 毎回実行される
 useEffect(() => {
-	console.log("◯◯◯", count);
+  console.log("◯◯◯", count);
 });
 
 // 初回レンダリング後のみ実行される
 useEffect(() => {
-	console.log("◯◯◯", count);
+  console.log("◯◯◯", count);
 }, []);
 
 // triggerが変更される度に実行される
 useEffect(() => {
-	console.log("◯◯◯", count);
+  console.log("◯◯◯", count);
 }, [trigger]);
 
 // trigger1かtorigger2が変更される度に実行される
 useEffect(() => {
-	console.log("◯◯◯", count);
+  console.log("◯◯◯", count);
 }, [trigger1, trigger2]);
 ```
 
@@ -288,7 +289,7 @@ useEffect(() => {
 
 ```js
 {
-	showFlag && <p>テキスト</p>;
+  showFlag && <p>テキスト</p>;
 }
 ```
 
@@ -301,9 +302,9 @@ useEffect(() => {
 
 ```js
 if (条件) {
-	showFlag || setShowFlag(true); // showFlagがfalseだったらshowFlagをtrueにする
+  showFlag || setShowFlag(true); // showFlagがfalseだったらshowFlagをtrueにする
 } else {
-	showFlag && setShowFlag(false); // showFlagがtrueだったらshowFlagをfalseにする
+  showFlag && setShowFlag(false); // showFlagがtrueだったらshowFlagをfalseにする
 }
 ```
 
@@ -335,7 +336,7 @@ import { ColorfulMassage } from "./components/ColorfulMassage";
 
 // export元の記述
 export const ColorfulMassage = (props) => {
-	省略;
+  省略;
 };
 ```
 
@@ -366,6 +367,6 @@ useCallback(コールバック関数, [監視対象]);
 
 先程の memo 化とそこに関数を渡していく場合は、関数の方の memo 化(= useCallback)の 2 つを組み合わせる必要がある。
 
-## Zenn記事
+## Zenn 記事
 
-<a href="https://zenn.dev/miz_dev/articles/4e6baa5b747c5d" target="_blank">Reactの基本的なところを備忘として残しておく</a>
+<a href="https://zenn.dev/miz_dev/articles/4e6baa5b747c5d" target="_blank">React の基本的なところを備忘として残しておく</a>
