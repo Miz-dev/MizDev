@@ -7,7 +7,7 @@ pubDate: 2023/05/02
 # image:
 #   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
 #   alt: "The Astro logo with the word One."
-tags: ["react"]
+tags: ["React"]
 draft: false
 ---
 
