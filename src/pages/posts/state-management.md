@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 
 title: "グローバルなstate管理"
-pubDate: 2023/05/04
+pubDate: 2023/05/03
 # description: "This is the first post of my new Astro blog."
 # image:
 #   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
