@@ -161,13 +161,13 @@ const contentStyle = {
 通常の CSS のように
 
 ```css
-font-size: red;
+font-size: 18px;
 ```
 
 ではなく
 
 ```js
-fontSize: "red";
+fontSize: "18px";
 ```
 
 とキャメルケースで記載する。
