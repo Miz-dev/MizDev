@@ -48,7 +48,7 @@
   </a>
 </div>
 
-<style>
+<style lang="scss" is:global>
   .social {
     display: flex;
     align-items: center;
@@ -59,8 +59,12 @@
     width: 24px;
     height: 24px;
     transition: 0.4s;
+    &:hover,
+    &:focus {
+      fill: #2c568e;
+    }
   }
-  .social-icon:hover,
+  .dark .social-icon:hover,
   :focus {
     fill: #2c568e;
   }
