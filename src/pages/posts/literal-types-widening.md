@@ -22,7 +22,7 @@ draft: false
 取りうる値の中で、とある値に限定させたい場面で有用となる。
 
 ## Boolean Literal Types
-以下のように、<strong style="color: red;">true</strong>に限定して受け取りたいといったような場合に使用する。
+以下のように、<strong style="color: #ff7b72;">true</strong>に限定して受け取りたいといったような場合に使用する。
 
 ```ts
 const foo: boolean = true;
@@ -31,7 +31,7 @@ const foo: true = true;
 ```
 
 ## String Literal Types
-以下のように、とある<strong style="color: red;">文字列</strong>に限定して受け取りたい場合に使用する。  
+以下のように、とある<strong style="color: #ff7b72;">文字列</strong>に限定して受け取りたい場合に使用する。  
 文字列を指定しているので、タイポを防ぐという意味でも有用。
 
 ```ts
@@ -41,7 +41,7 @@ const foo: "foo" = "foo";
 ```
 
 ## Number Literal Types
-以下のように、とある<strong style="color: red;">数値</strong>に限定して受け取りたい場合に使用する。  
+以下のように、とある<strong style="color: #ff7b72;">数値</strong>に限定して受け取りたい場合に使用する。  
 数値を指定しているので、タイポを防ぐという意味でも有用。
 
 ```ts
@@ -57,16 +57,16 @@ const foo: 0 = 0;
 # const と let の型推論の違い
 ## const
 const の型推論では Literal Types が表示される。  
-→<strong style="color: red;">再代入不可のため、特定の値だと推論できるため。</strong>
+→<strong style="color: #ff7b72;">再代入不可のため、特定の値だと推論できるため。</strong>
 
 ## let
 Literal Types ではなく、通常の型が表示される。  
-→<strong style="color: red;">let は再代入可能なので、あとから別の値が入る可能性があり、特定の値だと推論できないため。</strong>
+→<strong style="color: #ff7b72;">let は再代入可能なので、あとから別の値が入る可能性があり、特定の値だと推論できないため。</strong>
 
 # Widening とは
-const で型推論された Literal Types を再代入可能な変数やオブジェクトのプロパティのような、後から変えられうるところに代入してしまうと、Literal Types ではない例えば string 型に拡張されてしまうことを <strong style="color: red;">Widening</strong>という。
+const で型推論された Literal Types を再代入可能な変数やオブジェクトのプロパティのような、後から変えられうるところに代入してしまうと、Literal Types ではない例えば string 型に拡張されてしまうことを <strong style="color: #ff7b72;">Widening</strong>という。
 
-const での Literal Types は Widening の性質を持っているため、<strong style="color: red;">Widening Literal Types</strong>と呼ばれる。
+const での Literal Types は Widening の性質を持っているため、<strong style="color: #ff7b72;">Widening Literal Types</strong>と呼ばれる。
 
 # Widening への対処
 ## 型アノテーション
@@ -97,4 +97,4 @@ const foo = "foo" as const;
 Widening は Literal Types に限った話ではない。  
 Widening はあくまで性質のこと。
 
-<strong style="color: red;">「型が拡張されてしまう = Widening」</strong>
+<strong style="color: #ff7b72;">「型が拡張されてしまう = Widening」</strong>
