@@ -161,11 +161,6 @@ a:focus {
   margin-bottom: 2rem;
 }
 
-.dark .social-icon:hover,
-:focus {
-  fill: #2c568e;
-}
-
 @media screen and (min-width: 636px) {
   .nav-links {
     margin-left: 5em;
