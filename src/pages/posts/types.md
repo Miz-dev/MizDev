@@ -57,7 +57,7 @@ TypeScript が推測して、宣言に対して方を付与してくれる。
 
 ## 記述方法
 
-as { bar: number }を付与することで、上書きをすることができる。
+<code>as { bar: number }</code>を付与することで、上書きをすることができる。
 
 ```ts
 let foo = {} as { bar: number };
