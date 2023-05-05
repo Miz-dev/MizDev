@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 
 title: "TypeScriptでのnullとundefinedの使い分け"
-pubDate: 2023/05/03
+pubDate: 2023/05/04
 # description: "This is the first post of my new Astro blog."
 # image:
 #   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
