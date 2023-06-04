@@ -53,6 +53,11 @@ const { posts } = Astro.props;
     gap: 2rem;
     padding-left: 0;
   }
+  @media screen and (max-width: 636px) {
+    ul {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
   li {
     list-style: none;
   }
