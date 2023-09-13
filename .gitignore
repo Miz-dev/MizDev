@@ -12,6 +12,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# node version
+.node-version
+
+# yarn
+yarn.lock
 
 # environment variables
 .env
