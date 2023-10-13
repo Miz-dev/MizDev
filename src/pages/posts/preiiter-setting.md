@@ -558,3 +558,8 @@ HTML、JSX 等において、付与されている属性を１行づつ改行し
 
 Prettier の設定オプションを利用して、読みやすく一貫性のあるコードを保つためのガイドラインを設定することができます。
 これにより、チームの開発効率を向上させることが期待できるので積極的に活用していきましょう。
+
+## 参考
+
+- [Prettier Docs](https://prettier.io/docs/en/options.html)
+- [Prettier の設定オプションについてまとめてみた](https://zenn.dev/rescuenow/articles/c07dd571dfe10f)
