@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Post from "../components/Post.astro";
+import "../styles/global.css"
 const pageTitle = "MizDev";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 const nonDraftPosts = allPosts.filter((post) => !post.frontmatter.draft);
