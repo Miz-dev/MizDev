@@ -15,7 +15,11 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <Header />
-    <h1 class="baseTitle">{pageTitle}</h1>
+    <h1
+      class="text-3xl pb-4 mb-8 border-b border-current text-primary dark:text-white"
+    >
+      {pageTitle}
+    </h1>
     <slot />
     <Footer />
     <script>
@@ -23,12 +27,3 @@ const { pageTitle } = Astro.props;
     </script>
   </body>
 </html>
-
-<style>
-  .baseTitle {
-    color: #2c568e;
-    font-size: 2rem;
-    border-bottom: 1px solid #2c568e;
-    padding-bottom: 1rem;
-  }
-</style>
