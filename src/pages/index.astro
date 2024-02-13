@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Post from "../components/Post.astro";
+import "../styles/global.css";
 const pageTitle = "MizDev";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 const nonDraftPosts = allPosts.filter((post) => !post.frontmatter.draft);
@@ -32,6 +33,7 @@ const sortedPosts = nonDraftPosts.sort((a, b) => {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
     padding-left: 0;
+    margin-bottom: 32px;
   }
   @media screen and (max-width: 636px) {
     ul {
