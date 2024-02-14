@@ -2,14 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.dark .baseTitle {
-  color: #eee;
-  border-bottom: 1px solid #eee;
-}
-
 .expanded {
   display: unset;
 }
+
 .znc {
   margin-bottom: 2rem;
 }
