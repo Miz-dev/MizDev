@@ -7,26 +7,6 @@
   border-bottom: 1px solid #eee;
 }
 
-/* nav styles */
-.hamburger {
-  cursor: pointer;
-  z-index: 100;
-}
-
-.hamburger .line {
-  display: block;
-  width: 35px;
-  height: 3px;
-  background-color: #2c568e;
-  &:not(:last-of-type) {
-    margin-bottom: 7px;
-  }
-}
-
-.dark .hamburger .line {
-  background-color: #eee;
-}
-
 .expanded {
   display: unset;
 }
