@@ -2,51 +2,15 @@
 const { title, url, pubDate, tags } = Astro.props;
 ---
 
-<li class="postItem">
-  <a href={url}>
-    <h2>{title}</h2>
-    <time>{pubDate}</time>
+<li
+  class="rounded-lg duration-300 [box-shadow:0px_0px_5px_0px_rgba(44,86,142,0.35)] hover:bg-primary/10 dark:bg-white/10 dark:focus-within:bg-white/15 dark:hover:bg-white/15"
+>
+  <a href={url} class="flex h-full flex-col items-center px-8 py-10 duration-300 dark:text-white">
+    <h2 class="text-lg font-bold text-primary dark:text-white">{title}</h2>
+    <time class="mb-4 text-sm font-bold text-primary dark:text-white">{pubDate}</time>
     <span
       class="m-1 h-fit rounded-3xl border border-primary px-10 py-1 text-sm text-primary duration-300 dark:border-white dark:text-white"
       >{tags}</span
     >
   </a>
 </li>
-
-<style lang="scss">
-  .postItem {
-    border: 0px solid #2c568e;
-    box-shadow: 0px 0px 5px 0px rgba(44, 86, 142, 0.35);
-    border-radius: 0.5rem;
-    list-style: none;
-    a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #2c568e;
-      font-size: 1.2rem;
-      font-weight: bold;
-      height: 100%;
-      padding: 2.5rem 2rem;
-      text-decoration: none;
-      transition: all 0.4s;
-      &:hover,
-      &:focus {
-        background-color: rgba(44, 86, 142, 0.1);
-        border-radius: 0.5rem;
-      }
-      h2 {
-        font-size: 1.2rem;
-        margin-top: 0;
-      }
-      time {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-      }
-      .tag {
-        transition: none;
-        pointer-events: none;
-      }
-    }
-  }
-</style>
