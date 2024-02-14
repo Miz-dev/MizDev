@@ -6,7 +6,10 @@ const { title, url, pubDate, tags } = Astro.props;
   <a href={url}>
     <h2>{title}</h2>
     <time>{pubDate}</time>
-    <span class="tag">{tags}</span>
+    <span
+      class="m-1 h-fit rounded-3xl border border-primary px-10 py-1 text-sm text-primary duration-300 dark:border-white dark:text-white"
+      >{tags}</span
+    >
   </a>
 </li>
 

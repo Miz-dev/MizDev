@@ -6,10 +6,13 @@ const pageTitle = "Tags";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <div class="tags">
+  <div class="flex flex-wrap">
     {
       tags.map((tag) => (
-        <a class="tag" href={`/tags/${tag}`}>
+        <a
+          class="m-1 h-fit rounded-3xl border border-primary px-10 py-1 text-sm text-primary duration-300 hover:bg-primary hover:text-white focus:bg-primary focus:text-white dark:border-white dark:text-white dark:hover:border-primary dark:focus:border-primary"
+          href={`/tags/${tag}`}
+        >
           {tag}
         </a>
       ))
