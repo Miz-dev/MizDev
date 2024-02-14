@@ -13,10 +13,6 @@ body {
   line-height: 1.5;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .dark body {
   color: #eee;
   background-color: #0f1928;
@@ -36,10 +32,6 @@ body {
 
 .dark .social-icon {
   fill: #eee;
-}
-
-.dark footer {
-  border-top: 1px solid #eee;
 }
 
 /* nav styles */
