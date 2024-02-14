@@ -11,14 +11,10 @@ export async function getStaticPaths() {
     return bDate.getTime() - aDate.getTime();
   });
 
-  const uniqueTags = [
-    ...new Set(sortedPosts.map((post) => post.frontmatter.tags).flat()),
-  ];
+  const uniqueTags = [...new Set(sortedPosts.map((post) => post.frontmatter.tags).flat())];
 
   return uniqueTags.map((tag) => {
-    const filteredPosts = sortedPosts.filter((post) =>
-      post.frontmatter.tags.includes(tag),
-    );
+    const filteredPosts = sortedPosts.filter((post) => post.frontmatter.tags.includes(tag));
     return {
       params: { tag },
       props: { posts: filteredPosts },
@@ -32,42 +28,20 @@ const { posts } = Astro.props;
 
 <BaseLayout pageTitle={tag}>
   <!-- <p>Posts tagged with {tag}</p> -->
-  <ul>
+  <ul
+    class="grid gap-8 [grid-template-columns:repeat(1,minmax(0,1fr))] md:[grid-template-columns:repeat(2,minmax(0,1fr))]"
+  >
     {
       posts.map((post) => (
-        <Post
-          url={post.url}
-          title={post.frontmatter.title}
-          pubDate={post.frontmatter.pubDate}
-          tags={post.frontmatter.tags}
-        />
+        <>
+          <Post
+            url={post.url}
+            title={post.frontmatter.title}
+            pubDate={post.frontmatter.pubDate}
+            tags={post.frontmatter.tags}
+          />
+        </>
       ))
     }
   </ul>
 </BaseLayout>
-
-<style>
-  ul {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
-    padding-left: 0;
-  }
-  @media screen and (max-width: 636px) {
-    ul {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
-  li {
-    list-style: none;
-  }
-  li a {
-    color: #2c568e;
-    text-decoration: none;
-    transition: all 0.4s;
-  }
-  li a:hover,
-  a:focus {
-    opacity: 0.7;
-  }
-</style>
