@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Post from "../components/Post.astro";
+import PostItem from "../components/PostItem.astro";
 import "../styles/global.css";
 const pageTitle = "MizDev";
 const allPosts = await Astro.glob("../pages/posts/*.md");
@@ -16,7 +16,7 @@ const sortedPosts = nonDraftPosts.sort((a, b) => {
   <ul class="auto-grid-72 mb-8 gap-8">
     {
       sortedPosts.map((post) => (
-        <Post
+        <PostItem
           url={post.url}
           title={post.frontmatter.title}
           pubDate={post.frontmatter.pubDate}
