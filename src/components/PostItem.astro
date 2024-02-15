@@ -1,0 +1,16 @@
+---
+const { title, url, pubDate, tags } = Astro.props;
+---
+
+<li
+  class="rounded-lg duration-300 [box-shadow:0px_0px_5px_0px_rgba(44,86,142,0.35)] hover:bg-primary/10 dark:bg-white/10 dark:focus-within:bg-white/15 dark:hover:bg-white/15"
+>
+  <a href={url} class="flex h-full flex-col items-center px-8 py-10 duration-300 dark:text-white">
+    <h2 class="text-lg font-bold text-primary dark:text-white">{title}</h2>
+    <time class="mb-4 text-sm font-bold text-primary dark:text-white">{pubDate}</time>
+    <span
+      class="m-1 h-fit rounded-3xl border border-primary px-10 py-1 text-sm text-primary duration-300 dark:border-white dark:text-white"
+      >{tags}</span
+    >
+  </a>
+</li>

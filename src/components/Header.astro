@@ -4,18 +4,10 @@ import Navigation from "./Navigation.astro";
 import ThemeIcon from "./ThemeIcon.astro";
 ---
 
-<header>
-  <nav>
+<header class="py-4">
+  <nav class="flex items-center justify-between">
     <ThemeIcon />
     <Navigation />
     <Hamburger />
   </nav>
 </header>
-
-<style>
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-</style>

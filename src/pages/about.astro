@@ -4,47 +4,59 @@ const pageTitle = "About Me";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Biography</h2>
-  <p>
-    小学校から高校まで野球一筋→大学卒業後ギター製作専門学校→楽器販売店では接客に馴染めず退職→未経験で都内Web制作会社に→会社解散に伴って再度Web制作会社に転職
-  </p>
-  <p>
-    自らの経験から未経験からWeb業界を目指す人向けの情報、Web制作についてのちょっとしたTipsや役立つことを発信しています！
-  </p>
-  <p>TypeScript/React/Next.js/Astro学習中！</p>
-  <h2>Hobby</h2>
-  <p>野球、サッカー、F1、スポーツ観戦</p>
-  <h2>Links</h2>
-  <ul>
-    <li>
-      Twitter：
-      <a class="social-icon" href="https://twitter.com/Miz_dev" target="_blank"
-        >https://twitter.com/Miz_dev
-      </a>
-    </li>
-    <li>
-      GitHub：
-      <a class="social-icon" href="https://github.com/Miz-dev" target="_blank"
-        >https://github.com/Miz-dev
-      </a>
-    </li>
-    <li>
-      MizLog：
-      <a class="social-icon" href="https://mizlog.dev/" target="_blank"
-        >https://mizlog.dev/
-      </a>
-    </li>
-    <li>
-      Zenn：
-      <a class="social-icon" href="https://zenn.dev/miz_dev" target="_blank"
-        >https://zenn.dev/miz_dev
-      </a>
-    </li>
-  </ul>
+  <div>
+    <h2 class="mb-5 text-2xl font-medium">Biography</h2>
+    <p>
+      小学校から高校まで野球一筋→大学卒業後ギター製作専門学校→楽器販売店では接客に馴染めず退職→未経験で都内Web制作会社に→会社解散に伴って再度Web制作会社に転職
+    </p>
+    <p class="mt-3">
+      自らの経験から未経験からWeb業界を目指す人向けの情報、Web制作についてのちょっとしたTipsや役立つことを発信しています！
+    </p>
+    <p class="mt-3">TypeScript/React/Next.js/Astro学習中！</p>
+  </div>
+  <div class="mt-8">
+    <h2 class="mb-5 text-2xl font-medium">Hobby</h2>
+    <p>野球、サッカー、F1、スポーツ観戦</p>
+  </div>
+  <div class="mt-8">
+    <h2 class="mb-5 pt-4 text-2xl font-medium">Links</h2>
+    <ul>
+      <li>
+        Twitter：
+        <a
+          class="text-primary hover:opacity-70 dark:text-white"
+          href="https://twitter.com/Miz_dev"
+          target="_blank"
+          >https://twitter.com/Miz_dev
+        </a>
+      </li>
+      <li>
+        GitHub：
+        <a
+          class="text-primary hover:opacity-70 dark:text-white"
+          href="https://github.com/Miz-dev"
+          target="_blank"
+          >https://github.com/Miz-dev
+        </a>
+      </li>
+      <li>
+        MizLog：
+        <a
+          class="pt-4 text-primary hover:opacity-70 dark:text-white"
+          href="https://mizlog.dev/"
+          target="_blank"
+          >https://mizlog.dev/
+        </a>
+      </li>
+      <li>
+        Zenn：
+        <a
+          class="text-primary hover:opacity-70 dark:text-white"
+          href="https://zenn.dev/miz_dev"
+          target="_blank"
+          >https://zenn.dev/miz_dev
+        </a>
+      </li>
+    </ul>
+  </div>
 </BaseLayout>
-
-<style>
-  a {
-    color: #2c568e;
-  }
-</style>

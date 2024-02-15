@@ -6,10 +6,10 @@ import "zenn-content-css";
 
 <BaseLayout pageTitle={frontmatter.title}>
   <!-- <p><em>{frontmatter.description}</em></p> -->
-  <p class="meta">
+  <p class="flex justify-end">
     公開日: {frontmatter.pubDate.slice(0, 10)}
     <a
-      class="author"
+      class="ml-2 text-primary duration-300 hover:opacity-70 focus:opacity-70"
       href="https://twitter.com/Miz_dev"
       target="_blank"
       rel="noopener noreferrer">@Miz_dev</a
@@ -18,10 +18,13 @@ import "zenn-content-css";
 
   <!-- <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} /> -->
 
-  <div class="tags">
+  <div class="mb-4 flex flex-wrap">
     {
       frontmatter.tags.map((tag: string) => (
-        <a class="tag" href={`/tags/${tag}`}>
+        <a
+          class="m-1 h-fit rounded-3xl border border-primary px-10 py-1 text-sm text-primary duration-300 hover:bg-primary hover:text-white focus:bg-primary focus:text-white dark:border-white dark:text-white dark:hover:border-primary dark:focus:border-primary"
+          href={`/tags/${tag}`}
+        >
           {tag}
         </a>
       ))
@@ -32,22 +35,3 @@ import "zenn-content-css";
     <slot />
   </div>
 </BaseLayout>
-
-<style>
-  .meta {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .author {
-    color: #00539f;
-    transition: 0.4s;
-    text-decoration: none;
-    margin-left: 0.5rem;
-  }
-  .author:hover {
-    opacity: 0.5;
-  }
-  .tags {
-    margin-bottom: 1rem;
-  }
-</style>

@@ -2,23 +2,11 @@
 import Social from "./Social.astro";
 ---
 
-<footer>
+<footer
+  class="mt-auto flex w-full flex-col items-center justify-center gap-y-4 border-t border-t-gray pt-4 dark:border-t-white"
+>
   <Social />
-  <small>
+  <small class="text-xs text-black dark:text-white">
     &copy;{`${new Date().getFullYear()} MizDev. All rights reserved.`}
   </small>
 </footer>
-
-<style>
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1rem;
-    width: 100%;
-    border-top: 1px solid #777;
-    padding-top: 1rem;
-    margin-top: auto;
-  }
-</style>
